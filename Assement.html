@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Electricity Bill Calculator</title>
+		<style type="text/css" >
+			body{
+				margin:0;
+				padding:0;
+				text-align:center;
+				font-family:sans-serif;  
+				}
+					h2{
+					font-size:40px;
+					font-weight:600;
+					color:grey;
+				}
+
+			div{
+			
+				width:600px;
+				height:400px;
+				position:absolute;
+				background-image:linear-gradient(120deg,#FFE5AD,#95A3A6);
+				border-radius:10px;
+				padding:20px;
+				border-style:solid;
+				top:20%;
+				left:30%;
+				}
+				#p1{
+					font-size:25px;
+					font-weight: 400;
+					font-family:Comic Sans MS;
+					color:#730039;
+					text-align: left;
+				}
+				#p2{
+					font-size:20px;
+					font-weight: 350;
+					font-family:inherit;
+					text-align: center;
+				
+				}
+			
+				#Units{
+					height:25px;
+					width:150px;
+					
+					border-style:1px solid #222f3e;
+				}
+
+			button{
+				font-family:Comic Sans MS;
+				margin-top:10px;
+				width:200px;
+				border-radius:30px;
+				padding:10px;
+				color:#fff;
+				outline:none;
+				background-image:linear-gradient(#02066f,#6d5acf); 
+				cursor:pointer;
+
+
+
+			}
+			button:hover{
+				box-shadow: 1px 1px 1px #ff6b6b;
+			}
+
+			#Clear{
+				width:150px;
+
+			}
+			#TAmount{
+				color:#fe2c54;
+				font-size: 25px;
+			}
+			a{
+				font-size: 12px;
+
+			}
+
+				
+
+		</style>
+		<script type="text/javascript" src="Assement.js"></script>
+	</head>
+	<body>
+		<h2>Domestric Electricity Bill Calculator </h2>
+
+		<div>
+
+		<p id="p1">Calculate Your Electricity Bill....</p>
+
+		<p id="p2">Number of units used:
+		<input id="Units" type="number"  min="1" max="1000">&nbsp kWh<br><br></p>
+		
+		<button id="Clear" value="Clear" onClick="getElementById('Units').value=''">Clear</button><br><br>
+
+		<p id="TAmount"></p>
+		<button id ="btn" value="Calculate" onClick="CalculateBill()">Calculate My Bill</button><br><br>
+
+		<a href="https://ceb.lk/">More information on how my bill is calculated</a><br>
+		<a href="https://ceb.lk/">Go to the CEB website</a>
+
+		</div>
+
+	</body>
+</html>
